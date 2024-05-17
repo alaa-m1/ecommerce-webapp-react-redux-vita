@@ -1,0 +1,51 @@
+import { configureStore, compose, applyMiddleware } from "@reduxjs/toolkit";
+import {
+  persistStore,
+  persistReducer,
+  FLUSH,
+  REHYDRATE,
+  PAUSE,
+  PERSIST,
+  PURGE,
+  REGISTER,
+} from "redux-persist";
+import storage from "redux-persist/lib/storage";
+import logger from "redux-logger";
+
+import { rootReducer } from "./rootReducer";
+import {ThunkMiddleware} from "redux-thunk";
+
+const persistConfig = {
+  key: "root",
+  storage,
+  whitelist: ["shoppingCart","user"],
+};
+
+const persistedReducer = persistReducer(persistConfig, rootReducer);
+
+const middlewares: any =
+  import.meta.env.PROD
+    ? [logger]
+    : [];
+const middlewareEnhancer = applyMiddleware(...middlewares);
+
+const enhancers = [middlewareEnhancer];
+const composedEnhancers =
+  (import.meta.env.PROD &&
+    typeof window !== "undefined" &&
+    (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) ||
+  compose(...enhancers);
+const store = configureStore({
+  reducer: persistedReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      enhancers: composedEnhancers,
+      serializableCheck: {
+        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+      },
+    }),
+});
+export const persistor = persistStore(store);
+export default store;
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
