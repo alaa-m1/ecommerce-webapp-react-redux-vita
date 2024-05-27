@@ -11,7 +11,7 @@ import {
   auth,
   signInWithFacebookPopup,
 } from "utils/firebase";
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import { getRedirectResult } from "firebase/auth";
 import { useTranslation } from "react-i18next";
 

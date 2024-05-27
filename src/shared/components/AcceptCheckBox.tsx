@@ -1,5 +1,5 @@
 import { Alert, Box, Link, Typography } from "@mui/material";
-import React from "react";
+
 import { FieldError, UseFormRegisterReturn } from "react-hook-form";
 
 type AcceptCheckBoxType = {

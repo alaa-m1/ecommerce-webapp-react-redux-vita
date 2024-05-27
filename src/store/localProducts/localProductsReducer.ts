@@ -1,6 +1,5 @@
 import { localProductsActionTypes } from "./localProductsActionTypes"
 import { CategoriesResponse } from "types";
-import { CategoriesAction } from "./localProductsActions";
 
 export type CategoryState = {
     categories: CategoriesResponse;

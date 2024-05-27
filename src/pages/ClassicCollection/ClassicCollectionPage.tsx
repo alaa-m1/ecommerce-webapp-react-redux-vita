@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo } from "react";
+import  { useCallback, useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
 import { selectMappedCategories } from "store/localProducts/localProductsSelector";
 import { useAppSelector } from "utils/redux/hooks";

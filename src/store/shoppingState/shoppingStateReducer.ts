@@ -6,11 +6,11 @@ type ShoppingCartState = {
     activeCartId: number;
 }
 
-type ShoppingCartAction = {
-    type: any,
-    // payload: HTMLDivElement | number
-    payload:  number
-}
+// type ShoppingCartAction = {
+//     type: any,
+//     // payload: HTMLDivElement | number
+//     payload:  number
+// }
 const initailState: ShoppingCartState = {
     // activeCart: null,
     activeCartIndex: 0,

@@ -1,5 +1,5 @@
 import { Theme, ThemeProvider as MuiThemeProvider } from "@mui/material";
-import React, { useLayoutEffect, useMemo } from "react";
+import  { useLayoutEffect, useMemo } from "react";
 import { getTheme } from "theme/getTheme";
 import { useAppSelector } from "utils/redux/hooks";
 import { CssBaseline } from "@mui/material";

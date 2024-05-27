@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import React, { useRef } from "react";
+import  { useRef } from "react";
 import { Product } from "types";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";

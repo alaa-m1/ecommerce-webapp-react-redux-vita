@@ -1,4 +1,4 @@
-import React from "react";
+
 import { LinkInfo, SideBarLinkInfo } from "types";
 import HomeIcon from "@mui/icons-material/Home";
 import ChairIcon from "@mui/icons-material/Chair";

@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Box } from "@mui/material";
 import { useAppSelector } from "utils/redux/hooks";
 import { selectShoopingCartItemsDetails } from "store/shoppingCart/shoppingCartSelector";

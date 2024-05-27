@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import React, { useTransition } from "react";
+import  { useTransition } from "react";
 
 export const PhotoCard = ({
   secure_url,

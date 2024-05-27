@@ -1,4 +1,4 @@
-import React from "react";
+
 import { AdminLogo } from "./AdminLogo";
 import { SideBarLinkInfo, UserDetails } from "types";
 import { useSearchParams } from "react-router-dom";

@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import  { Fragment } from "react";
 import { Box, Typography } from "@mui/material";
 import { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";

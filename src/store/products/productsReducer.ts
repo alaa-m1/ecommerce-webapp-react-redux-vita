@@ -1,6 +1,6 @@
 import { productsActionTypes } from "./productsActionTypes"
 import { ProductsResponse } from "types";
-import { ProductsAction } from "./productsActions";
+// import { ProductsAction } from "./productsActions";
 
 export type productState = {
     products: ProductsResponse;

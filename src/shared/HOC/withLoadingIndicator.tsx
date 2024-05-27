@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import React, { useCallback, useState } from "react";
+import  { useCallback, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { LoadingSpinner } from "shared/components";
 import _ from "lodash";

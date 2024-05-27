@@ -1,5 +1,5 @@
 import { Box, Button, Typography } from "@mui/material";
-import React, { memo, useCallback, useMemo } from "react";
+import  { memo, useCallback, useMemo } from "react";
 import { useDispatch } from "react-redux";
 import withLoadingIndicator from "shared/HOC/withLoadingIndicator";
 import { addToCart, setShowCart } from "store/shoppingCart/shoppingCartActions";

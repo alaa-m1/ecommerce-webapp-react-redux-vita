@@ -9,10 +9,10 @@ type ShoppingCartState = {
     activeCart: HTMLDivElement | null;
 }
 
-type ShoppingCartAction = {
-    type: any,
-    payload: CartCategories | boolean | HTMLDivElement
-}
+// type ShoppingCartAction = {
+//     type: any,
+//     payload: CartCategories | boolean | HTMLDivElement
+// }
 const initailState: ShoppingCartState = {
     isCartOpen: false,
     cartItems: [],

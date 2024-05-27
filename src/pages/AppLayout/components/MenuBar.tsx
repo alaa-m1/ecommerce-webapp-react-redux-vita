@@ -1,4 +1,4 @@
-import React, { MouseEvent, useEffect } from "react";
+import  { MouseEvent, useEffect } from "react";
 import { Box, useMediaQuery, useTheme } from "@mui/material";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 // import { deletePhoto, getAllPhotos } from "./actions/cloudinaryActions";
 import { UserPhotosUploader } from "./UserPhotosUploader";
 import { PhotosList } from "./PhotosList";

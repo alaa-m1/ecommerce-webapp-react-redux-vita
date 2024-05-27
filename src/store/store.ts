@@ -13,7 +13,6 @@ import storage from "redux-persist/lib/storage";
 import logger from "redux-logger";
 
 import { rootReducer } from "./rootReducer";
-import {ThunkMiddleware} from "redux-thunk";
 
 const persistConfig = {
   key: "root",

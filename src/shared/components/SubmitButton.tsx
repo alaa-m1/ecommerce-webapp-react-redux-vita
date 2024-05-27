@@ -1,5 +1,5 @@
 import { Button, ButtonProps, Typography, styled } from "@mui/material";
-import React from "react";
+
 import { RiseLoader } from "react-spinners";
 
 type SubmitButtonProps = ButtonProps & {

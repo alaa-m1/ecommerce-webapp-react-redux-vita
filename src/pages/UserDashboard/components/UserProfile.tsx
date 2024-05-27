@@ -1,5 +1,5 @@
 import { Box, Grid, Typography } from "@mui/material";
-import React from "react";
+
 import { LoadingSpinner } from "shared";
 import { UserDetails } from "types";
 

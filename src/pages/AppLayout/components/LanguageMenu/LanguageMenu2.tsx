@@ -9,7 +9,7 @@ import {
   Typography,
   styled,
 } from "@mui/material";
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+import  { useCallback, useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
 import { setDocumentDirection } from "store/user/userActions";

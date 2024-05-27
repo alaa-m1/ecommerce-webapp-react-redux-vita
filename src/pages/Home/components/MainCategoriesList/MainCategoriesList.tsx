@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Box } from "@mui/material";
 import { Products } from "types";
 import { MainCategoryCard } from "./components";
