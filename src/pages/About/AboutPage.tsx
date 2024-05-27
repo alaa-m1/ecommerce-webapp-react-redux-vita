@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Box, Typography } from "@mui/material";
 import { ColoredDevider, ExternalLink } from "shared";
 import { ProfilePhoto } from "./components";

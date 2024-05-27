@@ -1,5 +1,5 @@
 import { Box, useMediaQuery, useTheme } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { UserDetails } from "types";
 import { getUserDocFromAuth } from "utils/firebase";
 import { mapUserDetails } from "utils/mappingFunctions/mapUserDetails";

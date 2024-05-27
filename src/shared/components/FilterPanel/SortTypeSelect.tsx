@@ -1,7 +1,7 @@
 import { FormControl, InputLabel, MenuItem, Select, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import _ from "lodash";
-import React, { useMemo } from "react";
+import  { useMemo } from "react";
 import { SortOptions } from "types";
 import { useSearchParams } from "react-router-dom";
 

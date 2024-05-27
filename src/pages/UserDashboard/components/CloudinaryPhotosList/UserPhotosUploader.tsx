@@ -6,7 +6,7 @@ import {
 } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import React, { useCallback, useId, useMemo } from "react";
+import  { useCallback, useId, useMemo } from "react";
 import { BeatLoader } from "react-spinners";
 import { toast } from "react-toastify";
 import { MdClose } from "react-icons/md";

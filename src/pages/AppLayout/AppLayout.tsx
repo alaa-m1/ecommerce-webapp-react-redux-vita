@@ -6,7 +6,7 @@ import {
   useTheme,
   Container,
 } from "@mui/material";
-import React, {
+import  {
   MouseEvent,
   Suspense,
   useEffect,

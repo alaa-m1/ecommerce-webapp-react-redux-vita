@@ -1,7 +1,7 @@
 import SearchIcon from "@mui/icons-material/Search";
 import { useTranslation } from "react-i18next";
 import { useSearchParams } from "react-router-dom";
-import React, { useCallback, useMemo, useState } from "react";
+import  { useCallback, useMemo, useState } from "react";
 import _ from "lodash";
 import {
   InputAdornment,

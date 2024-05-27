@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { GenericDialog } from "shared";
 import CancelIcon from "@mui/icons-material/Cancel";
 import CheckCircle from "@mui/icons-material/CheckCircle";

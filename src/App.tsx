@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import  { Suspense } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import HomePage from "pages/Home/HomePage";
 import ClassicCollectionPage from "pages/ClassicCollection/ClassicCollectionPage";

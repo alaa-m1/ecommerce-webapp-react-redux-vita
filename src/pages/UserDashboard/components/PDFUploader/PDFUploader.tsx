@@ -1,4 +1,4 @@
-import React, { ChangeEvent } from "react";
+import  { ChangeEvent } from "react";
 import { ColoredDevider } from "shared";
 import { PDFViewer } from "./components/PDFViewer/PDFViewer";
 import { Box } from "@mui/material";

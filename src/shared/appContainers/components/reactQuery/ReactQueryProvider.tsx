@@ -1,5 +1,5 @@
 import { Box, Button, Typography, useTheme } from "@mui/material";
-import React from "react";
+
 import { ErrorBoundary } from "react-error-boundary";
 import { QueryClientProvider, QueryErrorResetBoundary } from "react-query";
 import { queryClient } from "./queryClient";

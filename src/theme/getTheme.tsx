@@ -227,9 +227,9 @@ export const getTheme = ({
             columnHeaderTitle: {
               color: themeMode === "dark" ? "#1976d2" : "#272727",
             },
-            cellContent: {
-              color: themeMode === "dark" ? "#1976d2" : "#272727",
-            },
+            // cellContent: {
+            //   color: themeMode === "dark" ? "#1976d2" : "#272727",
+            // },
           },
         },
       },

@@ -1,4 +1,4 @@
-import React from "react";
+
 import { PhotoCard } from "./PhotoCard";
 // import { deletePhoto } from "./actions/cloudinaryActions";
 import { isArray } from "lodash";

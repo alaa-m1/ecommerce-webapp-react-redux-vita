@@ -7,10 +7,10 @@ type UserState={
     direction: "ltr" | "rtl";
 }
 
-interface UserAction {
-    type: any,
-    payload: null | UserInfo | "light" | "dark" | "ltr" | "rtl"
-}
+// interface UserAction {
+//     type: any,
+//     payload: null | UserInfo | "light" | "dark" | "ltr" | "rtl"
+// }
 
 const initailState: UserState = {
     currentUser: null,
