@@ -11,6 +11,7 @@ import ThemedApp from "shared/appContainers/components/ThemedApp";
 import { ReactQueryProvider } from "./components/reactQuery/ReactQueryProvider";
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { ReactNode } from "react";
 
 
 const AppRoot = ({ children }: AppRootType) => {
@@ -43,6 +44,6 @@ const AppRoot = ({ children }: AppRootType) => {
   );
 };
 
-type AppRootType = { children: React.ReactNode };
+type AppRootType = { children: ReactNode };
 
 export default AppRoot;

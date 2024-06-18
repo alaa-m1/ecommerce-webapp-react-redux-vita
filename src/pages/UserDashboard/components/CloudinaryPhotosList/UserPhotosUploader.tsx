@@ -6,7 +6,7 @@ import {
 } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import  { useCallback, useId, useMemo } from "react";
+import { useCallback, useId, useMemo } from "react";
 import { BeatLoader } from "react-spinners";
 import { toast } from "react-toastify";
 import { MdClose } from "react-icons/md";
@@ -55,7 +55,7 @@ export const UserPhotosUploader = () => {
   );
 
   const onSubmit: SubmitHandler<UserSchemaType> = async (data) => {
-    const FilesList = data.profileImages;
+    // const FilesList = data.profileImages;
 
     const formData = new FormData();
     for (const img of importedImages) {

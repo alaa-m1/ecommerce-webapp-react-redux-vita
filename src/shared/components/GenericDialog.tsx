@@ -15,6 +15,7 @@ import {
   PaperProps,
   Fade,
 } from "@mui/material";
+import React from "react";
 import Draggable from "react-draggable";
 
 const GenericDialog = ({

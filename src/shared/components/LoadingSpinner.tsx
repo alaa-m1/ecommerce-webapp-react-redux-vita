@@ -1,5 +1,6 @@
 
 import { Box } from "@mui/material";
+import React from "react";
 import { GridLoader } from "react-spinners";
 
 const LoadingSpinner = ({ floatingOver, size=20 }: { floatingOver?: boolean, size?: number }) => {
