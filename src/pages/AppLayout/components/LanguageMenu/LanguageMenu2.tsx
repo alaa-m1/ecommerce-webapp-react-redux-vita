@@ -1,7 +1,6 @@
 import {
   ClickAwayListener,
   Grow,
-  Menu,
   MenuItem,
   MenuList,
   Paper,
@@ -9,7 +8,7 @@ import {
   Typography,
   styled,
 } from "@mui/material";
-import  { useCallback, useEffect, useMemo, useState } from "react";
+import  { KeyboardEvent, useCallback, useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
 import { setDocumentDirection } from "store/user/userActions";
@@ -36,7 +35,7 @@ export const LanguageMenu2 = ({ anchorEl, handleClose }: LanguageMenuProps) => {
     dispatch(setDocumentDirection("ltr"));
     handleClose();
   }, [dispatch, handleClose]);
-  function handleListKeyDown(event: React.KeyboardEvent) {
+  function handleListKeyDown(event: KeyboardEvent) {
     if (event.key === "Tab") {
       event.preventDefault();
       handleClose();

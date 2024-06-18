@@ -4,6 +4,7 @@ import { ErrorBoundary } from "react-error-boundary";
 import { QueryClientProvider, QueryErrorResetBoundary } from "react-query";
 import { queryClient } from "./queryClient";
 import { ReactQueryDevtools } from "react-query/devtools";
+import React from "react";
 
 export const ReactQueryProvider = ({
   children,

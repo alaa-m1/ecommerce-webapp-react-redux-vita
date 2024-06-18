@@ -1,4 +1,4 @@
-import  { ChangeEvent } from "react";
+import  { ChangeEvent, useState } from "react";
 import { ColoredDevider } from "shared";
 import { PDFViewer } from "./components/PDFViewer/PDFViewer";
 import { Box } from "@mui/material";
@@ -7,7 +7,7 @@ export type PDFData={
   name: string
 }
 export const PDFUploader = () => {
-  const [pdfData, setPdfData] = React.useState<PDFData | null>(null);
+  const [pdfData, setPdfData] = useState<PDFData | null>(null);
   const handleFileSelect = (e: ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files && e.target.files[0]
     if (file) {

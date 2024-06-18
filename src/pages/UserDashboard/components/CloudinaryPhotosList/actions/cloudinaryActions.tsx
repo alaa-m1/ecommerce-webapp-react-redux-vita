@@ -1,38 +1,27 @@
 // import fs from "fs/promises";
-import path from "path";
-import { v4 as uId } from "uuid";
+// import { v4 as uId } from "uuid";
 // import os from "os";
-///22222222
-// import cloudinary from "cloudinary";
-// import { revalidatePath } from "next/cache";
-// import Photo from "../models/Photo";
-
-2222222
-// cloudinary.v2.config({
-//   cloud_name: import.meta.env.CLOUDINARY_CLOUD_NAME,
-//   api_key: import.meta.env.CLOUDINARY_API_KEY,
-//   api_secret: import.meta.env.CLOUDINARY_API_SECRET,
-// });
 
 async function saveImagesToLoacal(formData: FormData) {
   const files = formData.getAll("profileImage") as Array<File>;
-  const multipleBuffersPromise = files.map((file) =>
-    file.arrayBuffer().then((data) => {
-      const buffer = Buffer.from(data);
-      const uniqueName = `${uId()}-${file.name}`;
-      // const uniqueName = uId();
-      const ext = file.type.split("/")[1];
+  const multipleBuffersPromise = files.map((file) =>{}
+    // file.arrayBuffer().then((data) => {
+    //   const buffer = Buffer.from(data);
+    //   const uniqueName = `${uId()}-${file.name}`;
+    //   // const uniqueName = uId();
+    //   const ext = file.type.split("/")[1];
 
-      // const uploadDir=path.join(process.cwd(),"public",`/uploadedImages/${uniqueName}.${ext}`)
-      //doesnot work in vercel
+    //   // const uploadDir=path.join(process.cwd(),"public",`/uploadedImages/${uniqueName}.${ext}`)
+    //   //doesnot work in vercel
 
-      // const tempDir = os.tmpdir();
-      // const uploadDir = path.join(tempDir, `/${uniqueName}.${ext}`);
+    //   // const tempDir = os.tmpdir();
+    //   // const uploadDir = path.join(tempDir, `/${uniqueName}.${ext}`);
 
-      // fs.writeFile(uploadDir, buffer);
-      // return { filePath: uploadDir, fileName: uniqueName };
-    })
-  );
+    //   // fs.writeFile(uploadDir, buffer);
+    //   // return { filePath: uploadDir, fileName: uniqueName };
+    // }
+  )
+  // );
   return await Promise.all(multipleBuffersPromise);
 }
 
@@ -89,9 +78,9 @@ export async function uploadProfileImage(formData: FormData) {
   }
 }
 
-const delay = (delayInms: number) => {
-  return new Promise((resolve) => setTimeout(resolve, delayInms));
-};
+// const delay = (delayInms: number) => {
+//   return new Promise((resolve) => setTimeout(resolve, delayInms));
+// };
 // export async function revalidate(path: string) {
 //   revalidatePath(path);
 // }

@@ -1,7 +1,7 @@
-import  { useEffect, useMemo, useState } from "react";
+import  { useEffect, useMemo } from "react";
 import { selectMappedCategories } from "store/localProducts/localProductsSelector";
 import { useAppSelector } from "utils/redux/hooks";
-import { GenericDialog, LoadingSpinner } from "shared";
+import { LoadingSpinner } from "shared";
 import { InfoSection, MainCategoriesList } from "./components";
 import { useProducts } from "pages/ModernCollection/hooks";
 import { setProducts } from "store/products/productsActions";
@@ -11,10 +11,6 @@ import {
   selectMappedProducts,
   selectProductsStatus,
 } from "store/products/productsSelector";
-import { Typography } from "@mui/material";
-import { DatePicker  } from '@mui/x-date-pickers/DatePicker';
-import dayjs, { Dayjs } from 'dayjs';
-import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
 
 const HomePage = () => {
   const dispatch = useDispatch();

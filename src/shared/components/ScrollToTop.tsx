@@ -1,6 +1,7 @@
 
 import { Box, Fab, Fade, useScrollTrigger } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import React from "react";
 
 type Props = {
   targetId: string;

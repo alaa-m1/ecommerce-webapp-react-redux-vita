@@ -9,7 +9,7 @@ import { useCheckoutColumn } from "./hooks";
 import { useAppSelector } from "utils/redux/hooks";
 import { selectShoopingCartItemsDetails } from "store/shoppingCart/shoppingCartSelector";
 import { useTranslation } from "react-i18next";
-import { PaymentForm, ProductCard } from "./components";
+import { PaymentForm } from "./components";
 import { GenericDialog } from "shared";
 import { Product } from "types";
 import { CheckCircle } from "@mui/icons-material";

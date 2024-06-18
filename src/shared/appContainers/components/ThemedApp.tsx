@@ -1,5 +1,5 @@
 import { Theme, ThemeProvider as MuiThemeProvider } from "@mui/material";
-import  { useLayoutEffect, useMemo } from "react";
+import  { ReactNode, useLayoutEffect, useMemo } from "react";
 import { getTheme } from "theme/getTheme";
 import { useAppSelector } from "utils/redux/hooks";
 import { CssBaseline } from "@mui/material";
@@ -36,6 +36,6 @@ const ThemedApp = ({ children }: ThemedAppProps) => {
   );
 };
 
-type ThemedAppProps = { children: React.ReactNode };
+type ThemedAppProps = { children: ReactNode };
 
 export default ThemedApp;

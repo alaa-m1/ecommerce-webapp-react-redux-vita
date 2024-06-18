@@ -1,5 +1,3 @@
-import * as React from "react";
-// import SwipeableViews from "react-swipeable-views-react-18-fix";
 import { useTheme } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Tabs from "@mui/material/Tabs";
@@ -9,6 +7,7 @@ import { GeneralSettings } from "./components/GeneralSettings";
 import { PrivilegesSettings } from "./components/PrivilegesSettings";
 import SettingsIcon from "@mui/icons-material/Settings";
 import SettingsAccessibilityIcon from "@mui/icons-material/SettingsAccessibility";
+import { SyntheticEvent, useState } from "react";
 
 const getTabProps = (index: number) => {
   return {
@@ -19,15 +18,15 @@ const getTabProps = (index: number) => {
 
 export const UserSettings = () => {
   const theme = useTheme();
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = useState(0);
 
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+  const handleChange = (event: SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
 
-  const handleChangeIndex = (index: number) => {
-    setValue(index);
-  };
+  // const handleChangeIndex = (index: number) => {
+  //   setValue(index);
+  // };
 
   return (
     <Box sx={{ bgcolor: "background.paper", width: "100%" }}>

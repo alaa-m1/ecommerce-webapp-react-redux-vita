@@ -2,6 +2,7 @@ import { Theme, createTheme } from "@mui/material";
 import type {} from "@mui/x-data-grid/themeAugmentation";
 import type {} from "@mui/x-date-pickers/themeAugmentation";
 import { arSD, enUS } from "@mui/x-data-grid/locales";
+import React from "react";
 
 const fontFamily = ["Noto Kufi Arabic", "Open Sans", "sans-serif", "Helvetica"];
 

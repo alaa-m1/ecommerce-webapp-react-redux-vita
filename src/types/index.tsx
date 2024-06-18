@@ -1,3 +1,5 @@
+import React from "react";
+
 export type LinkInfo = {
   label: string;
   path: string;

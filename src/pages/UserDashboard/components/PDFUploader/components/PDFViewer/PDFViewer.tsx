@@ -1,6 +1,5 @@
-import  { Fragment } from "react";
+import  { Fragment, useState } from "react";
 import { Box, Typography } from "@mui/material";
-import { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import { PDFData } from "../../PDFUploader";
 
@@ -10,7 +9,7 @@ type PDFViewerProps = {
 
 export function PDFViewer({ pdfData }: PDFViewerProps) {
   const [numPages, setNumPages] = useState(0);
-  const [pageNumber, setPageNumber] = useState(1);
+  const [, setPageNumber] = useState(1);
 
   function onDocumentLoadSuccess({ numPages }: { numPages: number }) {
     setNumPages(numPages);
