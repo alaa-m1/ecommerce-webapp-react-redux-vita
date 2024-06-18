@@ -17,7 +17,7 @@ const HomePage = () => {
   /// Using react-query to manage request state with caching (The other good solution to use with Redux is RTK Query)
   const { data, isLoading } = useProducts(100);
   useEffect(() => {
-    if (!_.isUndefined(data)) dispatch(setProducts(data));
+    if (!_.isUndefined(data)) dispatch(setProducts(data??[]));
   }, [data, dispatch]);
 
   /// Using Redux to manage request status (Comment the last two commands and then uncomment the next two commands)

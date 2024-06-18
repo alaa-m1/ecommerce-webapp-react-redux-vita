@@ -1,4 +1,4 @@
-import  { useCallback, useMemo } from "react";
+import { useCallback, useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
 import { selectMappedCategories } from "store/localProducts/localProductsSelector";
 import { useAppSelector } from "utils/redux/hooks";
@@ -21,7 +21,9 @@ const ClassicCollectionPage = () => {
       categories.filter((category) =>
         _.isNull(searchBy)
           ? category
-          : category.title.toLowerCase().includes(searchBy.toLowerCase())
+          : category.title
+              .toLowerCase()
+              .includes((searchBy ?? "").toLowerCase())
       ),
     [categories, searchBy]
   );

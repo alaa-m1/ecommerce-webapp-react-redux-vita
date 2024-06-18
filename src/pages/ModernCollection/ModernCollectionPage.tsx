@@ -1,20 +1,14 @@
-import  { useCallback, useEffect, useMemo } from "react";
+import { useCallback, useEffect, useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useAppSelector } from "utils/redux/hooks";
 import {
   selectMappedProducts,
   selectProductsStatus,
 } from "store/products/productsSelector";
-import {
-  setProducts,
-} from "store/products/productsActions";
+import { setProducts } from "store/products/productsActions";
 import { useDispatch } from "react-redux";
 import { useSortOptions } from "shared";
-import {
-  FilterPanel,
-  ScrollToTop,
-  ShopNav,
-} from "shared/components";
+import { FilterPanel, ScrollToTop, ShopNav } from "shared/components";
 import { useProducts } from "./hooks";
 import _ from "lodash";
 import { Product } from "types";
@@ -31,7 +25,7 @@ const ModernCollectionPage = () => {
   /// Using react-query to manage request state with caching (The other good solution to use with Redux is RTK Query)
   const { data, isLoading } = useProducts(100);
   useEffect(() => {
-    if (!_.isUndefined(data)) dispatch(setProducts(data));
+    if (!_.isUndefined(data)) dispatch(setProducts(data ?? []));
   }, [data, dispatch]);
 
   /// Using Redux to manage request status (Comment the last two commands and then uncomment the next two commands)
@@ -48,7 +42,9 @@ const ModernCollectionPage = () => {
       onlineCategories.filter((category) =>
         _.isNull(searchBy)
           ? category
-          : category.title.toLowerCase().includes(searchBy.toLowerCase())
+          : category.title
+              .toLowerCase()
+              .includes((searchBy ?? "").toLowerCase())
       ),
     [onlineCategories, searchBy]
   );
@@ -92,9 +88,8 @@ const ModernCollectionPage = () => {
   const sortOptions = useSortOptions();
   return (
     <>
-    <Box id="top-div-anchor"/>
+      <Box id="top-div-anchor" />
       <ShopNav
-      
         mainCategoriesLabels={mainCategoriesLabels}
         activeCategoryLabel={activeCategoryLabel ?? ""}
       />
@@ -108,7 +103,7 @@ const ModernCollectionPage = () => {
         mainCategoriesLabels={mainCategoriesLabels}
         SortedCategories={SortedCategories}
       />
-      <ScrollToTop targetId="top-div-anchor"/>
+      <ScrollToTop targetId="top-div-anchor" />
     </>
   );
 };
